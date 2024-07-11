@@ -320,6 +320,7 @@ __all__ = [
 	"musicbrainz",
 	"audiodb",
 	"deezer",
+	"jellyfin",
 	"maloja"
 ]
 from . import *

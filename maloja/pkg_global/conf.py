@@ -180,7 +180,7 @@ malojaconfig = Configuration(
 			"name":(tp.String(),												"Name",							"Generic Maloja User")
 		},
 		"Third Party Services":{
-			"metadata_providers":(tp.List(tp.String()),							"Metadata Providers",			['lastfm','spotify','deezer','audiodb','musicbrainz'],	"List of which metadata providers should be used in what order. Musicbrainz is rate-limited and should not be used first."),
+			"metadata_providers":(tp.List(tp.String()),							"Metadata Providers",			['jellyfin','lastfm','spotify','deezer','audiodb','musicbrainz'],	"List of which metadata providers should be used in what order. Musicbrainz is rate-limited and should not be used first."),
 			"scrobble_lastfm":(tp.Boolean(),									"Proxy-Scrobble to Last.fm",	False),
 			"lastfm_api_key":(tp.String(),										"Last.fm API Key",				None),
 			"lastfm_api_secret":(tp.String(),									"Last.fm API Secret",			None),
@@ -190,6 +190,8 @@ malojaconfig = Configuration(
 			"spotify_api_id":(tp.String(),										"Spotify API ID",				None),
 			"spotify_api_secret":(tp.String(),									"Spotify API Secret",			None),
 			"audiodb_api_key":(tp.String(),										"TheAudioDB API Key",			None),
+			"jellyfin_url":(tp.String(),										"Jellyfin URL",					None),
+			"jellyfin_api_key":(tp.String(),									"Jellyfin API Key",				None),
 			"other_maloja_url":(tp.String(),									"Other Maloja Instance URL",	None),
 			"other_maloja_api_key":(tp.String(),								"Other Maloja Instance API Key",None),
 			"track_search_provider":(tp.String(),								"Track Search Provider",		None),
